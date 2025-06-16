@@ -10,6 +10,11 @@
   <div class="text-center">
     <h1 class="text-4xl font-bold text-blue-600 mb-4">Welcome to OpenFlare</h1>
     <p class="text-lg text-gray-700">Your project is set up with Tailwind CSS!</p>
+    <div x-data="{ message: 'Hello Alpine!' }">
+        <p x-text="message"></p>
+        <button @click="message = 'Alpine.js is working!'">Test</button>
+    </div>
   </div>
+  <script defer src="/js/alpine.3.14.1.min.js"></script>
 </body>
 </html>
